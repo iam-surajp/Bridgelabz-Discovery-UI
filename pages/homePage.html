@@ -4,90 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discovery UI</title>
+    <link rel="stylesheet" href="/static/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        .mainDiv {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .videoDiv {
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
-
-        #myvideo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        .navElements {
-            position: absolute;
-            top: 50px;
-            left: 220px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0;
-            z-index: 1; /* Ensure the navbar is above the video */
-            
-        }
-
-        nav {
-            display: flex;
-            gap: 50px;
-            
-        }
-
-        nav span a {
-            color: white;
-            font-size: 18px;
-            font-weight: 400;
-            cursor: pointer;
-            transition: color 0.3s ease;
-            text-decoration: none;
-        }
-
-        nav span a:hover {
-            text-decoration: underline;
-        }
-
-        .burger-menu {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            color: white;
-            font-size: 24px;
-            margin-left: 25px;
-        }
     </style>
 </head>
 <body>
     <div class="mainDiv">
         <div class="videoDiv">
             <video id="myvideo" autoplay muted loop src="https://player.vimeo.com/progressive_redirect/playback/769653111/rendition/1080p/file.mp4?loc=external&signature=ed68edc6f93d6322ab788f73a6c328d62ef27555627cc8b2c6a85fdaf8e4c696" type="videomp4"></video>
+         
             <div class="navElements">
+                <div class="logo">
+                    <span><img src="/assets/logo.png" alt=""></span>
+                   <span class="logotext"><a href=""><label id="firstline">Discovery</label> <br>
+                                    <label id="secondline">LAND COMPANY</label></a></span>
+                </div>
                 <nav>
                     <span><a href="">About DLC</a></span>
                     <span><a href="">Our Worlds</a></span>
@@ -97,7 +31,20 @@
                     <span class="burger-menu"><i class="fas fa-bars"></i></span>
                 </nav>
             </div>
+            <div class="videoTitle">
+                <label>Discover <br>your world</label>
+            </div>
+
+            <div class="explore">
+                <label id="placeName">El Dorado Golf and Beach Club <br><br><label id="scroll">Scroll to explore</label></label>
+                
+                
+                <div class="arrowButton">
+                    <img src="/assets/downarr-removebg-preview.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </body>
 </html>
+

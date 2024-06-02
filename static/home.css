@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.mainDiv {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.videoDiv {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#myvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.navElements {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1; /* Ensure the navbar is above the video */
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    position:absolute;
+    left: 40%;
+}
+
+nav span a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+nav span a:hover {
+    text-decoration: underline;
+}
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    margin-left: 25px;
+}
+
+.videoTitle {
+    position: absolute;
+    top: 280px;
+    left: 350px;
+    color: white;
+}
+
+.videoTitle label {
+    font-size: 100px; /* Reduced font size */
+    font-weight: 100; /* Reduced font weight */
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 60px; /* Reduced line height */
+    word-spacing: 10px;
+}
+
+div .logo{
+    
+    display: flex;
+    position:absolute;
+    left: 0;
+    align-items: center;
+    
+}
+
+div .logo a{
+    color: white;
+    text-decoration: none;
+}
+
+div .logo img{
+    height: 40px;
+}
+
+#firstline{
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+
+#secondline{
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+
+.logotext{
+    margin-left: 10px;
+
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    /* justify-content: center; */
+    top: 520px;
+    left: 200px;
+    color: white;
+    width: 100%;
+}
+
+#placeName{
+    font-size: 20px;
+
+}
+
+#scroll{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.arrowButton {
+    position: relative;
+    /* justify-self: end; */
+    /* right: 0; */
+    left: 800px;
+    margin: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .arrowButton img {
+    height: 50%;
+    width: 50%;
+    /* width: 30px; */
+    object-fit: contain;
+}
