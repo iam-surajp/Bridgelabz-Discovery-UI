@@ -9,6 +9,65 @@
 
     <style>
 
+    .carousel-container {
+    position: relative;
+    top: 100px;
+    /* max-width: 1500px; */
+    width: 100%;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+.carousel-wrapper .carousel{
+    /* overflow: hidden; */
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 18px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* width: calc(450px*10); */
+    
+}
+
+/* .carousel-wrapper .carousel ::-webkit-scrollbar {
+    display: none;
+} */
+
+/* .carousel-wrapper{
+    
+} */
+
+/* .carousel {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+
+} */
+
+.carousel img {
+    width: 450px; /* Adjust this to fit your design */
+    height: 510px;
+    flex-shrink: 0;
+}
+
+@keyframes moveCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-450px * 10)); /* Adjust the value based on the total width of all images */
+    }
+}
+
+.img-item {
+    display: flex;
+    animation: moveCarousel 40s linear infinite; 
+    will-change: transform; /* Helps with smoother transitions */
+}
+
+.carousel img.clone {
+    position: absolute;
+    left: 100%;
+}
 
     </style>
 </head>
@@ -39,8 +98,7 @@
             <div class="explore">
                 <label id="placeName">El Dorado Golf and Beach Club <br><br><label id="scroll">Scroll to explore</label></label>
                 <div class="arrowButton">
-                    <button style="background: none;border: none;"><img src="/assets/downarr-removebg-preview.png" alt=""></button>
-                    
+                    <button style="background: none;border: none;"><img src="/assets/downarr-removebg-preview.png" alt=""></button>                   
                 </div>
             </div>
         </div>
@@ -53,7 +111,7 @@
                 spectacular settings. Find your unique <br> world- a place where your family can create <br>
                 unforgettable moments, together.
             </p>
-            <br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
             <img id="img1" src="/assets/img1.jpg" alt="">
 
         </div>
@@ -61,8 +119,40 @@
         <div class="rightpart">
             <img src="/assets/img2.png" alt="">
         </div>
-
+        
+        
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="exploreContent">
+
+        <div class="exploreNav">
+            <h5>Explore <br>our worlds</h5>
+            <div class="exploreButtons">
+              <button id="left" class="navButtons"><img style="width: 30px;height: 30px;" src="/assets/left_arr.svg" alt=""></button>
+              <button id="right" class="navButtons"><img style="width: 30px;height: 30px;" src="/assets/right_arr.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <img src="/assets/carousel_img/nature1.png" class="img-item" alt="Image 1">
+                    <img src="/assets/carousel_img/nature2.jpg" class="img-item" alt="Image 2">
+                    <img src="/assets/carousel_img/nature3.png" class="img-item" alt="Image 3">
+                    <img src="/assets/carousel_img/nature4.jpg" class="img-item" alt="Image 4">
+                    <img src="/assets/carousel_img/nature5.jpg" class="img-item" alt="Image 5">
+                    <img src="/assets/carousel_img/nature6.jpg" class="img-item" alt="Image 6">
+                    <img src="/assets/carousel_img/nature7.jpg" class="img-item" alt="Image 7">
+                    <img src="/assets/carousel_img/nature8.jpg" class="img-item" alt="Image 8">
+                    <img src="/assets/carousel_img/nature9.jpg" class="img-item" alt="Image 9">
+                    <img src="/assets/carousel_img/nature10.jpg" class="img-item" alt="Image 10">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include script file -->
+    <script src="script.js"></script>
 </body>
 </html>
 

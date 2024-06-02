@@ -7,6 +7,7 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
+            overflow-x: hidden;
         }
 
         .mainDiv {
@@ -81,10 +82,10 @@
         }
 
         .videoTitle label {
-            font-size: 100px; /* Reduced font size */
-            font-weight: 100; /* Reduced font weight */
+            font-size: 100px; 
+            font-weight: 100; 
             font-family: 'Times New Roman', Times, serif;
-            line-height: 60px; /* Reduced line height */
+            line-height: 60px; 
             word-spacing: 10px;
         }
    
@@ -205,3 +206,35 @@
              position: relative;
              top: 170px;
          }
+
+         
+       .exploreNav{
+        display: flex;
+        align-items: center;
+        /* width: 80%; */
+        position: relative;
+        left: 250px;
+
+       }
+       
+       div .exploreNav h5{
+        font-size: 60px;
+        line-height: 60px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+       }
+
+       .exploreButtons{
+        position: relative;
+        left: 650px;
+       }
+
+        div .exploreButtons button{
+            margin: 10px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: none;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        }
