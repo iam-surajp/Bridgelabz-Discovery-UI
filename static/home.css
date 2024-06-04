@@ -1,240 +1,396 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-        }
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
 
-        .mainDiv {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
-        }
+.mainDiv {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
 
-        .videoDiv {
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
+.videoDiv {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-        #myvideo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
+#myvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
-        .navElements {
-            position: absolute;
-            top: 50px;
-            left: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0;
-            z-index: 1; /* Ensure the navbar is above the video */
-        }
+.navElements {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1; 
+}
 
-        nav {
-            display: flex;
-            gap: 50px;
-            position:absolute;
-            left: 40%;
-        }
+nav {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  left: 40%;
+}
 
-        nav span a {
-            color: white;
-            font-size: 18px;
-            font-weight: 400;
-            cursor: pointer;
-            transition: color 0.3s ease;
-            text-decoration: none;
-        }
+nav span a {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
 
-        nav span a:hover {
-            text-decoration: underline;
-        }
+nav span a:hover {
+  text-decoration: underline;
+}
 
-        .burger-menu {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            color: white;
-            font-size: 24px;
-            margin-left: 25px;
-        }
+.burger-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  margin-left: 25px;
+}
 
-        .videoTitle {
-            position: absolute;
-            top: 280px;
-            left: 350px;
-            color: white;
-        }
+.videoTitle {
+  position: absolute;
+  top: 280px;
+  left: 350px;
+  color: white;
+}
 
-        .videoTitle label {
-            font-size: 100px; 
-            font-weight: 100; 
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 60px; 
-            word-spacing: 10px;
-        }
-   
-        div .logo{
-            
-            display: flex;
-            position:absolute;
-            left: 0;
-            align-items: center;
-            
-        }
+.videoTitle label {
+  font-size: 100px;
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 60px;
+  word-spacing: 10px;
+}
 
-        div .logo a{
-            color: white;
-            text-decoration: none;
-        }
+div .logo {
+  display: flex;
+  position: absolute;
+  left: 0;
+  align-items: center;
+}
 
-        div .logo img{
-            height: 40px;
-        }
+div .logo a {
+  color: white;
+  text-decoration: none;
+}
 
-        #firstline{
-            font-size: 25px;
-            letter-spacing: 5px;
-            font-weight: 200;
-        }
+div .logo img {
+  height: 40px;
+}
 
-        #secondline{
-            font-size: 10px;
-            letter-spacing: 5px;
-            font-weight: 200;
-        }
+#firstline {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
 
-        .logotext{
-            margin-left: 10px;
+#secondline {
+  font-size: 10px;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
 
-        }
+.logotext {
+  margin-left: 10px;
+}
 
-        .explore{
-            display: flex;
-            align-items: center;
-            position:absolute;
-            /* justify-content: center; */
-            top: 520px;
-            left: 200px;
-            color: white;
-            width: 100%;
-        }
+.explore {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* justify-content: center; */
+  top: 520px;
+  left: 200px;
+  color: white;
+  width: 100%;
+}
 
-        #placeName{
-            font-size: 20px;
+#placeName {
+  font-size: 20px;
+}
 
-        }
+#scroll {
+  color: rgba(255, 255, 255, 0.5);
+}
 
-        #scroll{
-            color: rgba(255, 255, 255, 0.5);
-        }
+.arrowButton {
+  position: relative;
+  /* justify-self: end; */
+  /* right: 0; */
+  left: 800px;
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        .arrowButton {
-            position: relative;
-            /* justify-self: end; */
-            /* right: 0; */
-            left: 800px;
-            margin: 20px;
-            height: 80px;
-            width: 80px;
-            border: 1px solid white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+div .arrowButton img {
+  height: 35%;
+  width: 35%;
+  object-fit: contain;
+}
 
-        div .arrowButton img {
-            height: 35%;
-            width: 35%;
-            object-fit: contain;
-        }
+.content {
+  display: flex;
+  /* justify-content: center; */
+}
 
-        .content{
-            display: flex;
-            /* justify-content: center; */
-         }
- 
-         .welcomeDiv{
-             display: flex;
-             flex-direction: column;
-             justify-content: space-evenly;
-             position: relative;
-             left: 200px;
-             top: 100px;
-             margin-top: 50px;
-             width: 80%;
- 
-         }
- 
-         div .welcomeDiv h3{
-             font-size: 60px;
-             font-weight: 300;
-             font-family: 'Times New Roman', Times, serif;
-         }
- 
-         div .welcomeDiv p{
-             font-size: 17px;
-             line-height: 30px;
-             color: rgba(black, black, black, 0.3);
-         }
- 
-         div .welcomeDiv #img1{
-             width: 60%;
-             position: relative;
-             left: 0;
-         }
- 
-         div .rightpart img {
-             width: 80%;
-             height: 83%;
-             position: relative;
-             top: 170px;
-         }
+.welcomeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  left: 200px;
+  top: 100px;
+  margin-top: 50px;
+  width: 80%;
+}
 
-         
-       .exploreNav{
-        display: flex;
-        align-items: center;
-        /* width: 80%; */
-        position: relative;
-        left: 250px;
+div .welcomeDiv h3 {
+  font-size: 60px;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+}
 
-       }
-       
-       div .exploreNav h5{
-        font-size: 60px;
-        line-height: 60px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 100;
-       }
+div .welcomeDiv p {
+  font-size: 17px;
+  line-height: 30px;
+  color: rgba(black, black, black, 0.3);
+}
 
-       .exploreButtons{
-        position: relative;
-        left: 650px;
-       }
+div .welcomeDiv #img1 {
+  width: 60%;
+  position: relative;
+  left: 0;
+}
 
-        div .exploreButtons button{
-            margin: 10px;
-            height: 70px;
-            width: 70px;
-            border-radius: 50%;
-            border: none;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-        }
+div .rightpart img {
+  width: 80%;
+  height: 83%;
+  position: relative;
+  top: 170px;
+}
+
+.exploreNav {
+  display: flex;
+  align-items: center;
+  /* width: 80%; */
+  position: relative;
+  left: 250px;
+}
+
+div .exploreNav h5 {
+  font-size: 60px;
+  line-height: 60px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
+.exploreButtons {
+  position: relative;
+  left: 650px;
+}
+
+div .exploreButtons button {
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-wrapper .carousel {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.carousel img {
+  width: 450px;
+  height: 510px;
+  flex-shrink: 0;
+}
+
+@keyframes moveCarousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(
+      calc(-450px * 5)
+    ); /* Adjust the value based on the total width of all images */
+  }
+}
+
+.img-item {
+  animation: moveCarousel 30s linear infinite;
+  will-change: transform;
+}
+
+.discovery-land {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 250px;
+  left: 200px;
+}
+
+.discovery-land h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.discovery-land p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(black, black, black, 0.5);
+}
+
+.globe-content {
+  display: flex;
+  position: relative;
+  top: 200px;
+  width: 100%;
+}
+
+.globe-content img {
+  width: 50%;
+}
+
+
+.globe-info{
+  display: flex;
+  position: relative;
+  top: 120px;
+  right: 20px;
+  height: 600px;
+  width: 70%;
+}
+
+.info-left-part{
+  height: 100%;
+  width: 70%;
+  background-color: black;
+}
+
+.info-right-part{
+  height: 600px;
+  width: 400px;
+
+}
+
+.info-right-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrowsNav{
+  display: flex;
+  position: relative;
+  top: 30px;
+  left: 25px;
+}
+
+.arrowsNav button{
+  background-color: black;
+  border: none;
+  height: 60px;
+  width: 60px;
+}
+
+.arr-imgs{
+  width: 60px;
+  height: 60px;
+}
+
+.weather-imgs{
+  object-fit: cover;
+}
+
+.weather-div{
+  height: 70px;
+  width: 70px;
+}
+
+.place-info{
+  display: flex;
+  position: relative;
+  top: 70px;
+  left: 30px;
+}
+
+.weather-place-name{
+  color: white;
+  position: relative;
+  top: 150px;
+  left: 40px;
+}
+
+.weather-labels{
+  color: rgb(191, 190, 190);
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  left: 7px;
+}
+
+#loc-weather-div{
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 150px;
+  left: 50px;
+}
+
+#img4-weather{
+  width: 30%;
+  height: 30%;
+}
+

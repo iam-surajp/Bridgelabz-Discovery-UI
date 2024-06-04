@@ -6,118 +6,29 @@
     <title>Discovery UI</title>
     <link rel="stylesheet" href="/static/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
-
-    .carousel-container {
-    position: relative;
-    top: 100px;
-    /* max-width: 1500px; */
-    width: 100%;
-    margin: auto;
-    
+.image-cards{
+  display: flex;
+  position: relative;
+  z-index: 2;
 }
 
-.carousel-wrapper .carousel{
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    gap: 18px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    /* width: calc(450px*10); */
-    
+.image-cards img{
+  width: 500px;
+  height: 600px;
 }
 
-
-/* .carousel {
-    display: inline-block;
-    transition: transform 0.5s ease-in-out;
-
-} */
-
-.carousel img {
-    width: 450px; /* Adjust this to fit your design */
-    height: 510px;
-    flex-shrink: 0;
+.text-overlay {
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
 }
-
-@keyframes moveCarousel {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(calc(-450px*5)); /* Adjust the value based on the total width of all images */
-    }
-}
-
-.img-item {
-    /* display: flex; */
-    animation: moveCarousel 30s linear infinite; 
-    will-change: transform; 
-}
-
-.discovery-land{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 250px;
-    left: 200px;
-}
-
-.discovery-land h4{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-weight: 100;
-
-}
-
-.discovery-land p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: rgba(black, black, black, 0.5);
-}
-
-.globe-content{
-    display: flex;
-    position: relative;
-    top: 200px;
-    width: 100%;
-
-}
-
-.globe-content img{
-    width: 50%;
-}
-
-.globe-info{
-    display: flex;
-    position: relative;
-    top: 120px;
-    right: 20px;
-    height: 600px;
-    width: 70%;
-}
-
-.info-left-part{
-    height: 100%;
-    width: 70%;
-    background-color: black;
-}
-
-.info-right-part{
-    height: 600px;
-    width: 400px;
-
-}
-
-.info-right-part img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
     </style>
 </head>
 <body>
@@ -168,12 +79,9 @@
         <div class="rightpart">
             <img src="/assets/img2.png" alt="">
         </div>
-        
-        
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="exploreContent">
-
         <div class="exploreNav">
             <h5>Explore <br>our worlds</h5>
             <div class="exploreButtons">
@@ -211,18 +119,71 @@
             <img src="/assets/globe.png" alt="">
              <div class="globe-info">
                 <div class="info-left-part">
+                    <div class="arrowsNav" style="display: flex;">
+                        <button id="prevBtn"><img src="/assets/Larr.png" class="arr-imgs" alt=""></button>
+                        <button id="nextBtn"><img src="/assets/Rarr.png"  alt="" class="arr-imgs"></button>
+                    </div>
+
+                    <div class="place-info">
+                        <div id="img1-weather" class="weather-div">
+                               <img src="/assets/sun.png" alt="img" class="weather-imgs"><br>
+                               <label id="temp" class="weather-labels"></label>       <!--data added dynamically-->
+                        </div>
+                        <div id="img2-weather" class="weather-div">
+                            <img src="/assets/wind.png" alt="img" class="weather-imgs"><br>
+                            <label id="wind" class="weather-labels"></label>           <!--data added dynamically-->
+                        </div>
+                        <div id="img3-weather" class="weather-div">
+                            <img src="/assets/compass (2).png" alt="img" class="weather-imgs"><br>
+                            <label id="compass" class="weather-labels"></label>        <!--data added dynamically-->
+                        </div>
+                    </div>
+                    <div class="weather-place-name">
+                          <label id="subtitle-label" style="font-size: 20px;font-family: 'Times New Roman', Times, serif;"></label><br><br>     <!--data added dynamically-->
+                          <label id="title-label" style="font-size: 40px;font-family: 'Times New Roman', Times, serif;"></label>                <!--data added dynamically-->
+                    </div>
+                    <br><br><br><br>
+                    <div class="weather-div" id="loc-weather-div">
+                        <div style="width: 50px;height: 50px;margin: 0;">
+                            <img src="/assets/loc (2).png" alt="" id="img4-weather" class="weather-imgs">
+                        </div>
+                        <label id="location-coords" class="weather-labels" style="position: relative;left: 0;"></label>       <!--data added dynamically-->
+                    </div>
                     
                 </div>
                 <div class="info-right-part">
-                    <img src="/assets/carousel_img/nature4.jpg" alt="">
+                    <img id="imgs" src="/assets/carousel_img/nature4.jpg" alt="">
                 </div>
              </div>
         </div>
+        <br><br><br>
+        <div class="image-cards">
+            <div class="img-card">
+                <img src="/assets/carousel_img/nature1.png" alt="Image 1">
+                <div class="text-overlay">Text img1</div>
+            </div>
+
+            <div class="img-card">
+                <img src="/assets/carousel_img/nature2.jpg" alt="Image 2">
+                <div class="text-overlay">Text img2</div>
+            </div>
+            
+            <div class="img-card">
+                <img src="/assets/carousel_img/nature10.jpg" alt="Image 3">         
+                <div class="text-overlay">Text img3</div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-div">
+                  
+            </div>
+        </footer>
 
     </div>
 
     <!-- include script file -->
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
+
 </body>
 </html>
 
