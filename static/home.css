@@ -394,3 +394,93 @@ div .exploreButtons button {
   height: 30%;
 }
 
+
+.image-cards{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.image-cards img{
+     height: 700px;
+     width: 510px;
+}
+
+.text-overlay {
+position: relative;
+top: -400px;
+color: white;
+font-size: 40px;
+font-weight: 100;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+z-index: 1;
+}
+
+.imgdescButton{
+  position: relative;
+  left: 0;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-div{
+    display: flex;
+    position:relative;
+    bottom: 0;
+    /* left: 0; */
+    width: 100%;
+    height: 500px;
+    background-color:rgb(23, 29, 26);
+    color: white;
+}
+
+.foot-div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left: 60px;
+}
+
+.foot-div2{
+    display: flex;
+    position: relative;
+    left:400px;
+    top: 90px;
+    flex-direction: column;
+    margin:20px;
+}
+
+.foot-div3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    left: 500px;
+
+}
+
+.foot-div3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.foot-div4{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    left: 650px;
+}
+
+.foot-div4 a{
+    color: white;
+    text-decoration: none;
+}

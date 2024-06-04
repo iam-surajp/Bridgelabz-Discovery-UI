@@ -8,30 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
-.image-cards{
-  display: flex;
-  position: relative;
-  z-index: 2;
-}
-
-.image-cards img{
-  width: 500px;
-  height: 600px;
-}
-
-.text-overlay {
-position: relative;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
-font-size: 24px;
-font-weight: bold;
-text-align: center;
+.parent{
+    min-height:auto;
+    margin: 0;
+    padding: 0;
 }
     </style>
 </head>
 <body>
+    <div class="parent">
     <div class="mainDiv">
         <div class="videoDiv">
             <video id="myvideo" autoplay muted loop src="https://player.vimeo.com/progressive_redirect/playback/769653111/rendition/1080p/file.mp4?loc=external&signature=ed68edc6f93d6322ab788f73a6c328d62ef27555627cc8b2c6a85fdaf8e4c696" type="videomp4"></video>
@@ -160,30 +145,63 @@ text-align: center;
         <div class="image-cards">
             <div class="img-card">
                 <img src="/assets/carousel_img/nature1.png" alt="Image 1">
-                <div class="text-overlay">Text img1</div>
+                <div class="text-overlay">Experiences <br>
+                    <button class="imgdescButton" style="color: white;font-size: larger;">&rarr;</button>
+                </div>
             </div>
 
             <div class="img-card">
                 <img src="/assets/carousel_img/nature2.jpg" alt="Image 2">
-                <div class="text-overlay">Text img2</div>
+                <div class="text-overlay">Lifestyle <br>
+                    <button class="imgdescButton" style="color: white;font-size: larger;">&rarr;</button>
+                </div>
             </div>
             
             <div class="img-card">
                 <img src="/assets/carousel_img/nature10.jpg" alt="Image 3">         
-                <div class="text-overlay">Text img3</div>
+                <div class="text-overlay">Wellness <br>
+                    <button class="imgdescButton" style="color: white;font-size: larger;">&rarr;</button>
+                </div>
             </div>
         </div>
+        
         <footer>
             <div class="footer-div">
-                  
+                  <div class="foot-div1">
+                      <img src="/assets/logo-white.png" style="width: 50px;" alt="">
+                      <label>&copy; Discovery Land Company. All rights reserved. </label>
+                  </div>
+                  <div class="foot-div2">
+                          <label style="color: rgb(188, 188, 187);font-size: small;">GET IN TOUCH</label><br>
+                          <a href="" style="text-decoration: none;color: white;">(480) 624-5200</a><br>
+                          <a href="" style="color: white;">mail@discoverylandco.com</a><br><br>
+                          <label style="color: rgb(188, 188, 187);font-size: small;">REAL ESTATE</label><br>
+                          <a href="" style="color: white;">realestate@discoverylandco.com</a>
+                  </div>
+                  <div class="foot-div3">
+                           <a href="">About DLC</a><br>
+                           <a href="">Our Worlds</a><br>
+                           <a href="">Experiences</a><br>
+                           <a href="">Company</a><br>
+                           <a href="">Gallery</a>
+                  </div>
+                  <div class="foot-div4">
+                           <a href="">Careers</a><br>
+                           <a href="">Foundation</a><br>
+                           <a href="">Company</a><br>
+                           <a href="">Contact</a><br>
+                           <a href="">Privacy</a>
+                           <br><br><br><br><br><br><br>
+                           <label>Site by outpost</label>
+                  </div>
             </div>
+        
         </footer>
 
     </div>
-
+</div>
     <!-- include script file -->
     <script src="/js/script.js"></script>
-
 </body>
 </html>
 
