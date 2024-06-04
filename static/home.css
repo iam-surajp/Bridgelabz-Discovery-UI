@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body,html {
   height: 100%;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
