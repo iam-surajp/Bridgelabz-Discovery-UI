@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.imgs-section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.img-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-text h1{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    /* left: 200px; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.imgs-section img{
+    width: 510px;
+}
