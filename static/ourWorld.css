@@ -3,6 +3,55 @@
     margin: 0;
 }
 
+body {
+    background-color: black;
+    padding: 2%;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 12%;
+}
+
+.footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:rgb(23, 29, 26);
+    color: white;
+}
+
+.footer-div > div {
+    flex: 1;
+    min-width: 200px; 
+    padding: 10px;
+}
+
+.footer-div img {
+    width: 50px;
+}
+
+.footer-div a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-div a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+}
+
+
 .img-text{
     color: rgb(161, 158, 158);
     padding-top: 1%;
