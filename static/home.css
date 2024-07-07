@@ -35,12 +35,13 @@ body,html {
 
 .navElements {
   position: absolute;
-  top: 50px;
-  left: 100px;
-  width: 100%;
+  right: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: auto;
+  justify-content: flex-end;
+  margin-top: 50px;
+  width: 90%;
   padding: 10px 0;
   z-index: 1; 
 }
@@ -76,8 +77,8 @@ nav span a:hover {
 
 .videoTitle {
   position: absolute;
-  top: 280px;
-  left: 350px;
+  top: 40%;
+  left:25%;
   color: white;
 }
 
@@ -125,11 +126,11 @@ div .logo img {
   display: flex;
   align-items: center;
   position: absolute;
-  /* justify-content: center; */
-  top: 520px;
-  left: 200px;
+  justify-content: space-between;
+  top: 70%;
+  left: 10%;
   color: white;
-  width: 100%;
+  width: 80%;
 }
 
 #placeName {
@@ -141,10 +142,6 @@ div .logo img {
 }
 
 .arrowButton {
-  position: relative;
-  /* justify-self: end; */
-  /* right: 0; */
-  left: 800px;
   margin: 20px;
   height: 80px;
   width: 80px;
@@ -163,18 +160,17 @@ div .arrowButton img {
 
 .content {
   display: flex;
-  /* justify-content: center; */
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .welcomeDiv {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
-  left: 200px;
-  top: 100px;
-  margin-top: 50px;
-  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
+  width: 45%;
+  height: 800px;
 }
 
 div .welcomeDiv h3 {
@@ -191,23 +187,23 @@ div .welcomeDiv p {
 
 div .welcomeDiv #img1 {
   width: 60%;
+  height: 100%;
   position: relative;
   left: 0;
+  margin-top: 10%;
 }
 
 div .rightpart img {
-  width: 80%;
-  height: 83%;
-  position: relative;
-  top: 170px;
+  width: 90%;
+  height: 600px;
 }
 
 .exploreNav {
   display: flex;
   align-items: center;
-  /* width: 80%; */
-  position: relative;
-  left: 250px;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
 }
 
 div .exploreNav h5 {
@@ -215,11 +211,6 @@ div .exploreNav h5 {
   line-height: 60px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 100;
-}
-
-.exploreButtons {
-  position: relative;
-  left: 650px;
 }
 
 div .exploreButtons button {
@@ -233,10 +224,8 @@ div .exploreButtons button {
 }
 
 .carousel-container {
-  position: relative;
-  top: 100px;
   width: 100%;
-  margin: auto;
+  margin-top:10% ;
 }
 
 .carousel-wrapper .carousel {
@@ -273,9 +262,9 @@ div .exploreButtons button {
 .discovery-land {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 250px;
-  left: 200px;
+  width: 80%;
+  margin: auto;
+  margin-top: 15%;
 }
 
 .discovery-land h4 {
@@ -293,9 +282,6 @@ div .exploreButtons button {
 
 .globe-content {
   display: flex;
-  position: relative;
-  top: 200px;
-  width: 100%;
 }
 
 .globe-content img {
@@ -306,8 +292,7 @@ div .exploreButtons button {
 .globe-info{
   display: flex;
   position: relative;
-  top: 120px;
-  right: 20px;
+  margin-top: 10%;
   height: 600px;
   width: 70%;
 }
@@ -319,8 +304,8 @@ div .exploreButtons button {
 }
 
 .info-right-part{
-  height: 600px;
-  width: 400px;
+  height: 100%;
+  width: 60%;
 
 }
 
@@ -332,9 +317,8 @@ div .exploreButtons button {
 
 .arrowsNav{
   display: flex;
-  position: relative;
-  top: 30px;
-  left: 25px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 .arrowsNav button{
@@ -360,32 +344,26 @@ div .exploreButtons button {
 
 .place-info{
   display: flex;
-  position: relative;
-  top: 70px;
-  left: 30px;
+  margin-top: 50px;
+  margin-left:20px ;
 }
 
 .weather-place-name{
   color: white;
-  position: relative;
-  top: 150px;
-  left: 40px;
+  margin-top: 40px;
+  margin-left:20px
 }
 
 .weather-labels{
   color: rgb(191, 190, 190);
   font-size: 13px;
   font-weight: bold;
-  position: relative;
-  left: 7px;
 }
 
 #loc-weather-div{
   display: flex;
   width: 100%;
-  position: relative;
-  top: 150px;
-  left: 50px;
+  margin-left: 20px
 }
 
 #img4-weather{
@@ -396,19 +374,22 @@ div .exploreButtons button {
 
 .image-cards{
   display: flex;
-  position: relative;
   width: 100%;
-  height: 700px;
+  height: 100vh;
+}
+
+.img-card{
+  width: 50%;
 }
 
 .image-cards img{
-     height: 700px;
-     width: 510px;
+     height: 100%;
+     width: 100%;
 }
 
 .text-overlay {
 position: relative;
-top: -400px;
+bottom: 50%;
 color: white;
 font-size: 40px;
 font-weight: 100;
@@ -418,8 +399,6 @@ z-index: 1;
 }
 
 .imgdescButton{
-  position: relative;
-  left: 0;
   margin: 10px;
   height: 70px;
   width: 70px;
@@ -431,10 +410,10 @@ z-index: 1;
 
 .footer-div{
     display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
     flex-wrap: wrap;
     overflow: hidden;
-    position:relative;
-    bottom: 0;
     width: 100%;
     height: 500px;
     background-color:rgb(23, 29, 26);
@@ -444,43 +423,162 @@ z-index: 1;
 .foot-div1{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-    left: 60px;
+    justify-content: space-between;
+    margin-left: 10%;
+    height: 45vh;
 }
 
 .foot-div2{
     display: flex;
-    position: relative;
-    left:400px;
-    top: 90px;
     flex-direction: column;
     margin:20px;
+    height: 60vh;
 }
 
 .foot-div3{
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 100px;
-    left: 500px;
+    height: 60vh;
 
-}
-
-.foot-div3 a{
-    color: white;
-    text-decoration: none;
 }
 
 .foot-div4{
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 100px;
-    left: 650px;
+    margin-right: 10%;
+    height: 60vh;
+}
+
+.foot-div3 a{
+  color: white;
+  text-decoration: none;
 }
 
 .foot-div4 a{
     color: white;
     text-decoration: none;
+}
+
+
+@media (max-width: 1024px) {
+  .videoTitle label {
+    font-size: 80px;
+  }
+
+  .explore {
+    top: 75%;
+    left: 5%;
+  }
+
+  .exploreNav h5 {
+    font-size: 50px;
+  }
+
+  .welcomeDiv h3 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navElements {
+    margin-top: 30px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .videoTitle label {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .welcomeDiv h3 {
+    font-size: 40px;
+  }
+
+  .welcomeDiv #img1 {
+    width: 80%;
+  }
+
+  .explore {
+    top: 80%;
+  }
+
+  .exploreNav h5 {
+    font-size: 40px;
+  }
+
+  .discovery-land h4 {
+    font-size: 40px;
+  }
+
+  .discovery-land p {
+    font-size: 16px;
+  }
+
+  .foot-div1{
+    height: 20vh;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navElements {
+    /* margin-top: 10%; */
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+    height: 30vh;
+    border: 1px solid red;
+  }
+
+  nav {
+    left: 10%;
+  }
+
+  .videoTitle label {
+    font-size: 40px;
+    line-height: 40px;
+    left: 10%;
+  }
+
+  .welcomeDiv {
+    width: 80%;
+  }
+
+  .welcomeDiv h3 {
+    font-size: 30px;
+  }
+
+  .welcomeDiv #img1 {
+    width: 100%;
+  }
+
+  .explore {
+    top: 85%;
+  }
+
+  .exploreNav h5 {
+    font-size: 30px;
+  }
+
+  .discovery-land h4 {
+    font-size: 30px;
+  }
+
+  .discovery-land p {
+    font-size: 14px;
+  }
+
+  .foot-div1{
+    height: 20vh;
+    margin-bottom: 40px;
+  }
+
+  .content{
+    flex-direction: column;
+  }
 }
