@@ -17,40 +17,6 @@ body {
     padding-top: 12%;
 }
 
-.footer-div {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color:rgb(23, 29, 26);
-    color: white;
-}
-
-.footer-div > div {
-    flex: 1;
-    min-width: 200px; 
-    padding: 10px;
-}
-
-.footer-div img {
-    width: 50px;
-}
-
-.footer-div a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-div a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    width: 100%;
-}
-
 .img-text{
     color: rgb(161, 158, 158);
     padding-top: 1%;
@@ -66,4 +32,66 @@ footer {
 
 img{
     width: 349px;
+}
+
+@media (max-width: 1024px) {
+    .mainContent {
+        padding-top: 10%;
+        gap: 15px;
+    }
+
+    .img-title {
+        font-size: 14px;
+    }
+
+    .img-text {
+        font-size: 12px;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navElements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navElements nav {
+        margin-top: 10px;
+    }
+
+    .mainContent {
+        padding-top: 8%;
+    }
+
+    .img-title {
+        font-size: 13px;
+    }
+
+    .img-text {
+        font-size: 11px;
+        padding-bottom: 8%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navElements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainContent {
+        padding-top: 5%;
+        gap: 10px;
+    }
+
+    .img-title {
+        font-size: 12px;
+    }
+
+    .img-text {
+        font-size: 10px;
+        padding-bottom: 5%;
+    }
+
 }
