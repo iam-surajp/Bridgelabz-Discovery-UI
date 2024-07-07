@@ -3,9 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiences</title>
+    <title>Experiences Page</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/gallery.css">
+    <link rel="stylesheet" href="/static/experience.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <header>
+    <div class="mainDiv">
+        <div class="videoDiv">
+            <video id="myvideo" autoplay muted loop src="https://s3.eu-north-1.amazonaws.com/discoverylandco-main/experiences_hero.mp4" type="videomp4"></video>
+         
+            <div class="navElements">
+                
+                <div class="logo">
+                    <a href="homePage.html">
+                    <img src="/assets/mainlogo.png" alt=""></a>
+                </div>
+                <nav>
+                    <span><a href="">About DLC</a></span>
+                    <span><a href="ourWorldPage.html">Our Worlds</a></span>
+                    <span><a style="text-decoration: underline;">Experiences</a></span>
+                    <span><a href="">Company</a></span>
+                    <span><a href="galleryPage.html">Gallery</a></span>
+                    <span class="burger-menu"><i class="fas fa-bars"></i></span>
+                </nav>
+            </div>
+            <div class="videoTitle">
+                <label style="line-height: 70px;">Unforgettable <br>Experiences</label>
+            </div>
+
+            <div class="explore">
+               <label id="scroll">Scroll to explore</label>
+                <div class="arrowButton" style="margin-left: 60px;">
+                    <button style="background: none;border: none;"><img src="/assets/downarr-removebg-preview.png" alt=""></button>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="intro-text">
+        Memorable days. Exceptional nights. We believe its's our mission to <br>
+        make every minute matter. So you can live your life to the fullest,<br>
+        with the people closest to you
+    </div>
+
+    <!-- first section -->
+    <div class="first-section">
+        <div class="fsimg-text">
+            <div class="fs-heading">
+                <div style="font-family:'Franklin Gothic Medium';">Exclusive to</div>
+                <span
+                    style="font-family:Franklin Gothic Medium">Your World</span><br><br>
+            </div>
+            <div style="color: rgb(152, 150, 150);font-size: large;line-height: 30px;">
+                <div>Our worlds are designed to offer you endless</div>
+                <div>Oportunities to Explore the unique atmosphere of our private residential</div>
+                <div>communities and experience the Discovery difference Discovery</div>
+                <div>This is classic, comfortable, elevated Discovery living in nature’s </div>
+                <div>most spectacular settings. Discovery Find your unique world—a </div>
+                <div>place where your family Discovery can create unforgettable </div>
+                <div>moments, together. </div>
+            </div>
+        </div>
+
+        <div class="fs-img">
+            <img id="img2"
+                src="https://discoverylandco.com/imager/images/11059/private-marina-in-lake-tahoe-3_5ae402c9837860cd6e4f65e304b3a5fa.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <!-- mid content -->
+    <div class="mid-content">
+        <div>
+            <img id="im" src="https://discoverylandco.com/imager/images/11050/views-of-the-golf-course-at-Gozzer-5_4d32d1f061062da257f8ac1083a047ac.jpg" alt="">
+        </div>
+        <div class="ab">
+            <div><h2>Golf</h2></div><br>
+            <div class="mid-ct-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptates accusantium distinctio deleniti saepe illum, <br> voluptatum aut voluptatem nisi neque iste repellendus, sit qui <br> earum quis provident officiis numquam perferendis. <br> Dolor!
+                Lorem ipsum dolor si illum?
+            </div><br><br>
+            <div><button class="mid-exp-btn">Explore</button></div>
+        </div>
+    </div>
+
+    <div class="mid-content">
+        <div>
+            <img id="im" src="https://discoverylandco.com/imager/images/15204/Barbuda-Ocean-Club-20-0414_4d32d1f061062da257f8ac1083a047ac.jpg" alt="">
+        </div>
+        <div class="ab" >
+            <div><h2>Outdoor Pursuits</h2></div><br>
+            <div class="mid-ct-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptates accusantium distinctio deleniti saepe illum, <br> voluptatum aut voluptatem nisi neque iste repellendus, sit qui <br> earum quis provident officiis numquam perferendis. <br> Dolor!
+                Lorem ipsum dolor si illum?
+            </div><br><br>
+            <div><button class="mid-exp-btn">Explore</button></div>
+        </div>
+    </div>
+
+    <div class="mid-content" >
+        <div>
+            <img id="im" src="https://discoverylandco.com/imager/images/15219/Screen-Shot-2023-08-30-at-2.37.46-PM_4d32d1f061062da257f8ac1083a047ac.png" alt="">
+        </div>
+        <div class="ab">
+            <div><h2>Wellness</h2></div><br>
+            <div class="mid-ct-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptates accusantium distinctio deleniti saepe illum, <br> voluptatum aut voluptatem nisi neque iste repellendus, sit qui <br> earum quis provident officiis numquam perferendis. <br> Dolor!
+                Lorem ipsum dolor si illum?
+            </div><br><br>
+            <div><button class="mid-exp-btn">Explore</button></div>
+        </div>
+    </div>
+
+
+    <div style="position: relative;">
+        <div>
+            <img style="filter: brightness(65%);" width="100%" src="https://discoverylandco.com/imager/images/9846/Barbuda-ocean-club-2_5dabbd1a34149dcaed83515ff1526a0f.jpg" alt="">
+        </div>
+        <div class="bt-sect">
+            <div><h5 id="h5">Our Worlds</h5></div>
+            <br>
+            <br>
+            <div>
+                <button id="exp-btn">Explore</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-div">
+              <div class="foot-div1">
+                  <img src="/assets/logo-white.png" style="width: 50px;" alt="">
+                  <label>&copy; Discovery Land Company. All rights reserved. </label>
+              </div>
+              <div class="foot-div2">
+                      <label class="foot-lbl">GET IN TOUCH</label><br>
+                      <a id="phone-no">(480) 624-5200</a><br>
+                      <a class="foot-links">mail@discoverylandco.com</a><br><br>
+                      <label class="foot-lbl">REAL ESTATE</label><br>
+                      <a>realestate@discoverylandco.com</a>
+              </div>
+              <div class="foot-div3">
+                       <a>About DLC</a><br>
+                       <a href="ourWorldPage.html">Our Worlds</a><br>
+                       <a href="experiencePage.html">Experiences</a><br>
+                       <a>Company</a><br>
+                       <a href="galleryPage.html">Gallery</a>
+              </div>
+              <div class="foot-div4">
+                       <a >Careers</a><br>
+                       <a>Foundation</a><br>
+                       <a>Company</a><br>
+                       <a>Contact</a><br>
+                       <a>Privacy</a>
+                       <label id="outpost">Site by outpost</label>
+              </div>
+        </div>
+    </footer>
     
 </body>
 </html>
