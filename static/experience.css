@@ -81,54 +81,83 @@
 }
 
 
+@media screen and (min-width: 601px) {
+    .first-section {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
 
-@media screen and (max-width:600px) {
-    .ab{
+    .mid-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .ab {
+        position: absolute;
+        left: 60%;
+        top: 30%;
+        padding: 5%;
+    }
+
+    #im {
+        width: 100%;
+        height: auto;
+    }
+
+    #h5 {
+        font-size: 5rem;
+    }
+
+    .bt-sect {
+        top: 30%;
+        left: 40%; 
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ab {
         left: 1%;
         top: 25%;
         padding: 2%;
     }
-    #im{
+
+    #im {
         width: 100%;
     }
-    .mid-content{
+
+    .mid-content {
         padding-bottom: 40%;
     }
-    #img2{
-        width:200%;
+
+    #img2 {
+        width: 100%;
     }
-    .hName{
-        margin-left: -60px;
+
+    #h5 {
+        font-size: 2rem;
     }
-    .mainVideo{
-        margin-left: 0%;
-    }
-    .fs-img{
-        width: 50%;
-    }
-    #h2{
-        font-size: 20px;
-        margin-left: -7px;
-    }
-    .bt-sect{
+
+    .bt-sect {
         top: 10%;
-        left: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    
 }
 
-@media screen and (max-width:500px) {
-    .ab{
+@media screen and (max-width: 500px) {
+    .ab {
         left: 4%;
         top: 30%;
         padding: 5%;
     }
-    #im{
+
+    #im {
         width: 100%;
     }
-    .mid-content{
+
+    .mid-content {
         padding-bottom: 80%;
     }
-    
-    
 }
