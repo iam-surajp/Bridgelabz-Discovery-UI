@@ -366,6 +366,12 @@ div .exploreButtons button {
   margin-left: 20px
 }
 
+#loc-img{
+  width: 50px; 
+  height: 50px; 
+  margin: 0;
+}
+
 #img4-weather{
   width: 30%;
   height: 30%;
@@ -527,6 +533,11 @@ z-index: 1;
   .navElements {
     flex-wrap: wrap;
     align-items: flex-start;
+    
+  }
+
+  .nav-items{
+    width: 50%;
   }
 
   nav {
@@ -552,11 +563,22 @@ z-index: 1;
   }
 
   .explore {
-    top: 85%;
+    top: 80%;
+  }
+
+  .arrowButton img{
+    width: 20%;
   }
 
   .exploreNav h5 {
     font-size: 30px;
+  }
+
+  div .rightpart img{
+    width: 80%;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 5%;
   }
 
   .discovery-land h4 {
@@ -574,5 +596,87 @@ z-index: 1;
 
   .content{
     flex-direction: column;
+  }
+
+  div .exploreNav h5 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  div .exploreNav{
+    gap: 20%;
+  }
+
+  .exploreNav .navButtons{
+    width: 60%;
+    /* height: 50%; */
+  }
+
+  .carousel img{
+    width: 300px;
+    height: 410px;
+  }
+
+  #globe{
+    display: none;
+  }
+
+  .globe-info{
+    width: 100%;
+    height: 440px;
+    font-size: 0.5rem;
+  }
+
+  .place-info{
+    margin-top: 0%;
+  }
+
+  .title-label{
+    font-size: 25px;
+  }
+
+  div #loc-img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+
+  #img4-weather{
+    height: 70%;
+    width: 70%;
+  }
+
+  .image-cards{
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .img-card{
+    width: 100%;
+    height: 50%;
+  }
+  
+  .image-cards img{
+       height: 50vh;
+       width: 100%;
+       margin-bottom: 150px;
+  }
+
+  .text-overlay {
+    /* position:relative; */
+    /* bottom: 50%; */
+    align-items: center;
+    justify-content: center;
+    margin-top: -300px;
+  }
+
+  .footer-div{
+    padding: 10px;
+  }
+
+  .foot-div1{
+    height: 20%;
+    margin-top: 10%;
   }
 }

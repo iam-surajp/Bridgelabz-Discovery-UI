@@ -1,199 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discovery UI</title>
-    <link rel="stylesheet" href="/static/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <style>
-    </style>
-</head>
-<body>
+    <style></style>
+  </head>
+  <body>
     <div class="parent">
-    <div class="mainDiv">
+      <div class="mainDiv">
         <div class="videoDiv">
-            <video id="myvideo" autoplay muted loop src="https://player.vimeo.com/progressive_redirect/playback/769653111/rendition/1080p/file.mp4?loc=external&signature=ed68edc6f93d6322ab788f73a6c328d62ef27555627cc8b2c6a85fdaf8e4c696" type="videomp4"></video>
-         
-            <div class="navElements">                
-                <div class="logo">
-                    <a href="">
-                    <img src="/assets/mainlogo.png" alt=""></a>
-                </div>
-               <div>
-                <nav>
-                    <span><a href="">About DLC</a></span>
-                    <span><a href="ourWorldPage.html">Our Worlds</a></span>
-                    <span><a href="experiencePage.html">Experiences</a></span>
-                    <span><a href="">Company</a></span>
-                    <span><a href="galleryPage.html">Gallery</a></span>
-                    <span class="burger-menu"><i class="fas fa-bars"></i></span>
-                </nav>
-            </div>
-            </div>
-            <div class="videoTitle">
-                <label>Discover <br>your world</label>
-            </div>
+          <video
+            id="myvideo"
+            autoplay
+            muted
+            loop
+            src="https://player.vimeo.com/progressive_redirect/playback/769653111/rendition/1080p/file.mp4?loc=external&signature=ed68edc6f93d6322ab788f73a6c328d62ef27555627cc8b2c6a85fdaf8e4c696"
+            type="videomp4"
+          ></video>
 
-            <div class="explore">
-                <label id="placeName">El Dorado Golf and Beach Club <br><br><label id="scroll">Scroll to explore</label></label>
-                <div class="arrowButton">
-                    <button style="background: none;border: none;"><img src="/assets/downarr-removebg-preview.png" alt=""></button>                   
-                </div>
+          <div class="navElements">
+            <div class="logo">
+              <a href=""> <img src="/assets/mainlogo.png" alt="" /></a>
             </div>
+            <div class="nav-items">
+              <nav>
+                <span><a href="">About DLC</a></span>
+                <span><a href="ourWorldPage.html">Our Worlds</a></span>
+                <span><a href="experiencePage.html">Experiences</a></span>
+                <span><a href="">Company</a></span>
+                <span><a href="galleryPage.html">Gallery</a></span>
+                <span class="burger-menu"><i class="fas fa-bars"></i></span>
+              </nav>
+            </div>
+          </div>
+          <div class="videoTitle">
+            <label>Discover <br />your world</label>
+          </div>
+
+          <div class="explore">
+            <label id="placeName"
+              >El Dorado Golf and Beach Club <br /><br /><label id="scroll"
+                >Scroll to explore</label
+              ></label
+            >
+            <div class="arrowButton">
+              <button style="background: none; border: none">
+                <img src="/assets/downarr-removebg-preview.png" alt="" />
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="content">
+      </div>
+      <div class="content">
         <div class="welcomeDiv">
-            <h3>Welcome to <br>Discovery</h3> <br><br>
-            <p>Explore the unique atmosphere of our private <br>residential communities and experience the
-                Discovery <br> difference. This is classic, comfortable, elevated living <br> in nature's most
-                spectacular settings. Find your unique <br> world- a place where your family can create <br>
-                unforgettable moments, together.
-            </p>
-            <img id="img1" src="/assets/img1.jpg" alt="">
+          <h3>Welcome to <br />Discovery</h3>
+          <br /><br />
+          <p>
+            Explore the unique atmosphere of our private <br />residential
+            communities and experience the Discovery <br />
+            difference. This is classic, comfortable, elevated living <br />
+            in nature's most spectacular settings. Find your unique <br />
+            world- a place where your family can create <br />
+            unforgettable moments, together.
+          </p>
+          <img id="img1" src="/assets/img1.jpg" alt="" />
         </div>
 
         <div class="rightpart">
-            <img src="/assets/img2.png" alt="">
+          <img src="/assets/img2.png" alt="" />
         </div>
-    </div>
-    <div class="exploreContent">
+      </div>
+      <div class="exploreContent">
         <div class="exploreNav">
-            <h5>Explore <br>our worlds</h5>
-            <div class="exploreButtons">
-              <button id="left" class="navButtons"><img style="width: 30px;height: 30px;" src="/assets/left_arr.svg" alt=""></button>
-              <button id="right" class="navButtons"><img style="width: 30px;height: 30px;" src="/assets/right_arr.svg" alt=""></button>
-            </div>
+          <h5>Explore <br />our worlds</h5>
+          <div class="exploreButtons">
+            <button id="left" class="navButtons">
+              <img
+                style="width: 30px; height: 30px"
+                src="/assets/left_arr.svg"
+                alt=""
+              />
+            </button>
+            <button id="right" class="navButtons">
+              <img
+                style="width: 30px; height: 30px"
+                src="/assets/right_arr.svg"
+                alt=""
+              />
+            </button>
+          </div>
         </div>
 
         <div class="carousel-container">
-            <div class="carousel-wrapper">
-                <div class="carousel">
-                    <img src="/assets/carousel_img/nature1.png" class="img-item" alt="Image 1">
-                    <img src="/assets/carousel_img/nature2.jpg" class="img-item" alt="Image 2">
-                    <img src="/assets/carousel_img/nature3.png" class="img-item" alt="Image 3">
-                    <img src="/assets/carousel_img/nature4.jpg" class="img-item" alt="Image 4">
-                    <img src="/assets/carousel_img/nature5.jpg" class="img-item" alt="Image 5">
-                    <img src="/assets/carousel_img/nature6.jpg" class="img-item" alt="Image 6">
-                    <img src="/assets/carousel_img/nature7.jpg" class="img-item" alt="Image 7">
-                    <img src="/assets/carousel_img/nature8.jpg" class="img-item" alt="Image 8">
-                    <img src="/assets/carousel_img/nature9.jpg" class="img-item" alt="Image 9">
-                    <img src="/assets/carousel_img/nature10.jpg" class="img-item" alt="Image 10">
-                </div>
+          <div class="carousel-wrapper">
+            <div class="carousel">
+              <img
+                src="/assets/carousel_img/nature1.png"
+                class="img-item"
+                alt="Image 1"
+              />
+              <img
+                src="/assets/carousel_img/nature2.jpg"
+                class="img-item"
+                alt="Image 2"
+              />
+              <img
+                src="/assets/carousel_img/nature3.png"
+                class="img-item"
+                alt="Image 3"
+              />
+              <img
+                src="/assets/carousel_img/nature4.jpg"
+                class="img-item"
+                alt="Image 4"
+              />
+              <img
+                src="/assets/carousel_img/nature5.jpg"
+                class="img-item"
+                alt="Image 5"
+              />
+              <img
+                src="/assets/carousel_img/nature6.jpg"
+                class="img-item"
+                alt="Image 6"
+              />
+              <img
+                src="/assets/carousel_img/nature7.jpg"
+                class="img-item"
+                alt="Image 7"
+              />
+              <img
+                src="/assets/carousel_img/nature8.jpg"
+                class="img-item"
+                alt="Image 8"
+              />
+              <img
+                src="/assets/carousel_img/nature9.jpg"
+                class="img-item"
+                alt="Image 9"
+              />
+              <img
+                src="/assets/carousel_img/nature10.jpg"
+                class="img-item"
+                alt="Image 10"
+              />
             </div>
+          </div>
         </div>
-        
+
         <div class="discovery-land">
-            <h4>Lands of <br>Discovery</h4>
-            <br><br>
-            <p>A world away from the day to day. Your escape. Your world. Explore the <br>
-                map below and take a journey to our communities.
-            </p>
+          <h4>Lands of <br />Discovery</h4>
+          <br /><br />
+          <p>
+            A world away from the day to day. Your escape. Your world. Explore
+            the <br />
+            map below and take a journey to our communities.
+          </p>
         </div>
-        <br><br><br>
-        <div  class="globe-content">
-            <img src="/assets/globe.png" alt="">
-             <div class="globe-info">
-                <div class="info-left-part">
-                    <div class="arrowsNav" style="display: flex;">
-                        <button id="prevBtn"><img src="/assets/Larr.png" class="arr-imgs" alt=""></button>
-                        <button id="nextBtn"><img src="/assets/Rarr.png"  alt="" class="arr-imgs"></button>
-                    </div>
+        <br /><br /><br />
+        <div class="globe-content">
+          <img id="globe" src="/assets/globe.png" alt="" />
+          <div class="globe-info">
+            <div class="info-left-part">
+              <div class="arrowsNav" style="display: flex">
+                <button id="prevBtn">
+                  <img src="/assets/Larr.png" class="arr-imgs" alt="" />
+                </button>
+                <button id="nextBtn">
+                  <img src="/assets/Rarr.png" alt="" class="arr-imgs" />
+                </button>
+              </div>
 
-                    <div class="place-info">
-                        <div id="img1-weather" class="weather-div">
-                               <img src="/assets/sun.png" alt="img" class="weather-imgs"><br>
-                               <label id="temp" class="weather-labels"></label>      
-                        </div>
-                        <div id="img2-weather" class="weather-div">
-                            <img src="/assets/wind.png" alt="img" class="weather-imgs"><br>
-                            <label id="wind" class="weather-labels"></label>           
-                        </div>
-                        <div id="img3-weather" class="weather-div">
-                            <img src="/assets/compass (2).png" alt="img" class="weather-imgs"><br>
-                            <label id="compass" class="weather-labels"></label>      
-                        </div>
-                    </div>
-                    <div class="weather-place-name">
-                          <label id="subtitle-label" style="font-size: 20px;font-family: 'Times New Roman', Times, serif;"></label><br><br>     
-                          <label id="title-label" style="font-size: 40px;font-family: 'Times New Roman', Times, serif;"></label>               
-                    </div>
-                    <br><br><br><br>
-                    <div class="weather-div" id="loc-weather-div">
-                        <div style="width: 50px;height: 50px;margin: 0;">
-                            <img src="/assets/loc (2).png" alt="" id="img4-weather" class="weather-imgs">
-                        </div>
-                        <label id="location-coords" class="weather-labels" style="position: relative;left: 0;"></label>       
-                    </div>
-                    
+              <div class="place-info">
+                <div id="img1-weather" class="weather-div">
+                  <img
+                    src="/assets/sun.png"
+                    alt="img"
+                    class="weather-imgs"
+                  /><br />
+                  <label id="temp" class="weather-labels"></label>
                 </div>
-                <div class="info-right-part">
-                    <img id="imgs" src="/assets/carousel_img/nature4.jpg" alt="">
+                <div id="img2-weather" class="weather-div">
+                  <img
+                    src="/assets/wind.png"
+                    alt="img"
+                    class="weather-imgs"
+                  /><br />
+                  <label id="wind" class="weather-labels"></label>
                 </div>
-             </div>
+                <div id="img3-weather" class="weather-div">
+                  <img
+                    src="/assets/compass (2).png"
+                    alt="img"
+                    class="weather-imgs"
+                  /><br />
+                  <label id="compass" class="weather-labels"></label>
+                </div>
+              </div>
+              <div class="weather-place-name">
+                <label
+                  id="subtitle-label"
+                  style="
+                    font-size: 20px;
+                    font-family: 'Times New Roman', Times, serif;
+                  "
+                ></label
+                ><br /><br />
+                <label
+                  id="title-label"
+                  style="
+                    font-size: 40px;
+                    font-family: 'Times New Roman', Times, serif;
+                  "
+                ></label>
+              </div>
+              <br /><br /><br /><br />
+              <div class="weather-div" id="loc-weather-div">
+                <div id="loc-img">
+                  <img
+                    src="/assets/loc (2).png"
+                    alt=""
+                    id="img4-weather"
+                    class="weather-imgs"
+                  />
+                </div>
+                <label
+                  id="location-coords"
+                  class="weather-labels"
+                  style="position: relative; left: 0"
+                ></label>
+              </div>
+            </div>
+            <div class="info-right-part">
+              <img id="imgs" src="/assets/carousel_img/nature4.jpg" alt="" />
+            </div>
+          </div>
         </div>
-        <br><br><br>
+        <br /><br /><br />
         <div class="image-cards">
-            <div class="img-card">
-                <img src="/assets/carousel_img/nature1.png" alt="Image 1">
-                <div class="text-overlay">Experiences <br>
-                    <button class="imgdescButton" style="color: white;font-size: larger;">&rarr;</button>
-                </div>
+          <div class="img-card">
+            <img src="/assets/carousel_img/nature1.png" alt="Image 1" />
+            <div class="text-overlay">
+              Experiences <br />
+              <button
+                class="imgdescButton"
+                style="color: white; font-size: larger"
+              >
+                &rarr;
+              </button>
             </div>
+          </div>
 
-            <div class="img-card">
-                <img src="/assets/carousel_img/nature2.jpg" alt="Image 2">
-                <div class="text-overlay">Lifestyle <br>
-                    <button class="imgdescButton" style="color: white;font-size: larger;">&rarr;</button>
-                </div>
+          <div class="img-card">
+            <img src="/assets/carousel_img/nature2.jpg" alt="Image 2" />
+            <div class="text-overlay">
+              Lifestyle <br />
+              <button
+                class="imgdescButton"
+                style="color: white; font-size: larger"
+              >
+                &rarr;
+              </button>
             </div>
-            
-            <div class="img-card">
-                <img src="/assets/carousel_img/nature10.jpg" alt="Image 3">         
-                <div class="text-overlay">Wellness <br>
-                    <button class="imgdescButton" style="color: white;font-size: larger;">&rarr;</button>
-                </div>
+          </div>
+
+          <div class="img-card">
+            <img src="/assets/carousel_img/nature10.jpg" alt="Image 3" />
+            <div class="text-overlay">
+              Wellness <br />
+              <button
+                class="imgdescButton"
+                style="color: white; font-size: larger"
+              >
+                &rarr;
+              </button>
             </div>
+          </div>
         </div>
-        
+
         <footer>
-            <div class="footer-div">
-                  <div class="foot-div1">
-                      <img src="/assets/logo-white.png" style="width: 50px;" alt="">
-                      <label>&copy; Discovery Land Company. All rights reserved. </label>
-                  </div>
-                  <div class="foot-div2">
-                          <label style="color: rgb(188, 188, 187);font-size: small;">GET IN TOUCH</label><br>
-                          <a href="" style="text-decoration: none;color: white;">(480) 624-5200</a><br>
-                          <a href="" style="color: white;">mail@discoverylandco.com</a><br><br>
-                          <label style="color: rgb(188, 188, 187);font-size: small;">REAL ESTATE</label><br>
-                          <a href="" style="color: white;">realestate@discoverylandco.com</a>
-                  </div>
-                  <div class="foot-div3">
-                           <a href="">About DLC</a><br>
-                           <a href="ourWorldPage.html">Our Worlds</a><br>
-                           <a href="experiencePage.html">Experiences</a><br>
-                           <a href="">Company</a><br>
-                           <a href="galleryPage.html">Gallery</a>
-                  </div>
-                  <div class="foot-div4">
-                           <a href="">Careers</a><br>
-                           <a href="">Foundation</a><br>
-                           <a href="">Company</a><br>
-                           <a href="">Contact</a><br>
-                           <a href="">Privacy</a>
-                           <br><br>
-                           <label style="margin-top: 50px;">Site by outpost</label>
-                  </div>
+          <div class="footer-div">
+            <div class="foot-div1">
+              <img src="/assets/logo-white.png" style="width: 50px" alt="" />
+              <label
+                >&copy; Discovery Land Company. All rights reserved.
+              </label>
             </div>
+            <div class="foot-div2">
+              <label style="color: rgb(188, 188, 187); font-size: small"
+                >GET IN TOUCH</label
+              ><br />
+              <a href="" style="text-decoration: none; color: white"
+                >(480) 624-5200</a
+              ><br />
+              <a href="" style="color: white">mail@discoverylandco.com</a
+              ><br /><br />
+              <label style="color: rgb(188, 188, 187); font-size: small"
+                >REAL ESTATE</label
+              ><br />
+              <a href="" style="color: white">realestate@discoverylandco.com</a>
+            </div>
+            <div class="foot-div3">
+              <a href="">About DLC</a><br />
+              <a href="ourWorldPage.html">Our Worlds</a><br />
+              <a href="experiencePage.html">Experiences</a><br />
+              <a href="">Company</a><br />
+              <a href="galleryPage.html">Gallery</a>
+            </div>
+            <div class="foot-div4">
+              <a href="">Careers</a><br />
+              <a href="">Foundation</a><br />
+              <a href="">Company</a><br />
+              <a href="">Contact</a><br />
+              <a href="">Privacy</a>
+              <br /><br />
+              <label style="margin-top: 50px">Site by outpost</label>
+            </div>
+          </div>
         </footer>
+      </div>
     </div>
-</div>
     <!-- include script file -->
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>
-
-
